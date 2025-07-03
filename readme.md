@@ -75,6 +75,14 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - `routers/`: Diretório com os arquivos de rotas (alunos, cursos, matrículas).
 - `requirements.txt`: Lista de dependências do projeto.
 
+## Autenticação no Google Cloud
+
+```sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port=8000
+```
+
 ---
 
 - O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
